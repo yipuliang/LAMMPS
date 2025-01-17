@@ -6,13 +6,10 @@ LAMMPS is a good tool to calculate.
 
 There, we can use these command to get the RDF
 
-''''
-**
-compute myRDF ETTR_without_H rdf 500 1 2 2 1 cutoff 10.0
-
-fix rdf1 all ave/time 10 100 1000 c_myRDF[*] file rdf_AB.txt mode vector
-**
-''''
+  ```
+  compute myRDF ETTR_without_H rdf 500 1 2 2 1 cutoff 10.0
+  fix rdf1 all ave/time 10 100 1000 c_myRDF[*] file rdf_AB.txt mode vector
+  ```
 
 However, the curve is not smooth due to the one timestep data.
 
